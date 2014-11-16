@@ -1,0 +1,4 @@
+kkcms:
+    resource: "@KKCMSBundle/Controller/"
+    type:     annotation
+    prefix:   /

@@ -1,0 +1,13 @@
+{# app/Resources/views/Default/index.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {% for page in pages %}
+        <div class="page">
+            <h1>{{ page.title }}</h1>
+            <p>{{ page.content|slice(0,100) }}... <a href="{{ path('cms_display', { 'id': page.id }) }}">Read more</a></p>
+        </div>
+    {% endfor %}
+
+{% endblock %}
